@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 确认对话框样式【含有标题、左右两个按钮】布局文件 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comfirmdialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/confirm_cancel_util_dialog_margin"
+        android:layout_marginRight="@dimen/confirm_cancel_util_dialog_margin"
+        android:background="@drawable/dialog_confirm_cancel_util_bg" >
+		<!-- 标题 -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/confirm_cancel_title"
+            android:textColor="@color/confirm_cancel_util_dialog_title_color"
+            android:textSize="@dimen/confirm_cancel_util_dialog_title_text_size"
+            android:paddingTop="@dimen/confirm_cancel_util_dialog_title_padding"/>
+
+		<!-- 内容 -->
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:gravity="left"
+            android:textColor="@color/confirm_cancel_util_dialog_message_color"
+            android:text=""
+            android:textSize="@dimen/confirm_cancel_util_dialog_message_text_size"
+            android:paddingTop="@dimen/confirm_cancel_util_dialog_message_padding"
+            android:paddingBottom="@dimen/confirm_cancel_util_dialog_message_padding"
+            android:paddingLeft="@dimen/confirm_cancel_util_dialog_delever_margin"
+            android:paddingRight="@dimen/confirm_cancel_util_dialog_delever_margin"/>
+		<!-- 底部按钮区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent" >
+			<!-- 取消按钮 -->
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_confirm_cancel_util_left_btn_bg"
+                android:gravity="center"
+                android:text="@string/confirm_cancel_left_btn"
+                android:textColor="@color/confirm_cancel_util_dialog_btn_left_text_color"
+                android:textSize="@dimen/confirm_cancel_util_dialog_btn_text_size"
+                android:paddingTop="@dimen/confirm_cancel_util_dialog_title_padding"
+                android:paddingBottom="@dimen/confirm_cancel_util_dialog_title_padding" />
+
+			<!-- 确定按钮 -->
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/dialog_confirm_cancel_util_right_btn_bg"
+                android:gravity="center"
+                android:text="@string/confirm_cancel_right_btn"
+                android:textColor="@color/confirm_cancel_util_dialog_btn_right_text_color"
+                android:textSize="@dimen/confirm_cancel_util_dialog_btn_text_size"
+                android:paddingTop="@dimen/confirm_cancel_util_dialog_title_padding"
+                android:paddingBottom="@dimen/confirm_cancel_util_dialog_title_padding" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- ************确认取消对话框************ -->
+    <!-- 对话框的边框颜色 -->
+    <color name="confirm_cancel_util_dialog_stroke_color">#7fbfbfbf</color>
+    <!-- 对话框的填充颜色 -->
+    <color name="confirm_cancel_util_dialog_solid_color">#ffffffff</color>
+    <!-- 对话框的标题颜色 -->
+    <color name="confirm_cancel_util_dialog_title_color">#000000</color>
+    <!-- 对话框的内容颜色 -->
+    <color name="confirm_cancel_util_dialog_message_color">#6A6A6A</color>
+    <!-- 对话框的右侧按钮默认颜色 -->
+    <color name="confirm_cancel_util_dialog_btn_right_color">#ffffff</color>
+    <!-- 对话框的左侧按钮颜色 -->
+    <color name="confirm_cancel_util_dialog_btn_left_color">#4065EF</color>
+    <!-- 对话框的右侧按钮文字颜色 -->
+    <color name="confirm_cancel_util_dialog_btn_right_text_color">#000000</color>
+    <!-- 对话框的左侧按钮文字颜色 -->
+    <color name="confirm_cancel_util_dialog_btn_left_text_color">#ffffffff</color>
+
+</resources>

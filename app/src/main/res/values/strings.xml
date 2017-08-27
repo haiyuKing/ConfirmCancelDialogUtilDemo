@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConfirmCancelDialogUtilDemo</string>
+
+    <!-- ************确认取消对话框************ -->
+    <string name="confirm_cancel_title">提示</string>
+    <string name="confirm_cancel_right_btn">确定</string>
+    <string name="confirm_cancel_left_btn">取消</string>
+</resources>
