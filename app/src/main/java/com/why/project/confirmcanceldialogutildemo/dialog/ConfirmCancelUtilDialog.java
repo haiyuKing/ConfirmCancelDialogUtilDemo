@@ -76,8 +76,15 @@ public class ConfirmCancelUtilDialog extends DialogFragment {
 		this.getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
 		Window window = this.getDialog().getWindow();
 		window.setLayout(metrics.widthPixels, this.getDialog().getWindow().getAttributes().height);//这样才能实现点击空白区域自动隐藏对话框
+		//window.setLayout(metrics.widthPixels, metrics.heightPixels - getStatusBarHeight(mContext));//这样可以实现点击空白区域无法隐藏对话框的功能
 		window.setGravity(Gravity.CENTER);//设置在中间
 		//打开的动画效果
+	}
+
+	/**获取状态栏的高度*/
+	private int getStatusBarHeight(Context context) {
+		int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
+		return context.getResources().getDimensionPixelSize(resourceId);
 	}
 
 	/**实例化控件*/
