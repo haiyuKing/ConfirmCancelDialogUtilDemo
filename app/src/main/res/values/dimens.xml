@@ -3,9 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <!-- ************确认取消对话框************ -->
+    <!-- ==================确认取消对话框================== -->
     <!-- 对话框的圆角角度 -->
-    <dimen name="confirm_cancel_util_dialog_corners">10dp</dimen>
+    <dimen name="confirm_cancel_util_dialog_corners">5dp</dimen>
     <!-- 对话框的整体外边距 -->
     <dimen name="confirm_cancel_util_dialog_margin">40dp</dimen>
     <!-- 对话框的标题内边距 -->
@@ -13,12 +13,12 @@
     <!-- 对话框的标题大小 -->
     <dimen name="confirm_cancel_util_dialog_title_text_size">18sp</dimen>
     <!-- 中横线的外边距 -->
-    <dimen name="confirm_cancel_util_dialog_delever_margin">8dp</dimen>
+    <dimen name="confirm_cancel_util_dialog_delever_margin">1dp</dimen>
     <!-- 对话框的内容内边距 -->
-    <dimen name="confirm_cancel_util_dialog_message_padding">20dp</dimen>
+    <dimen name="confirm_cancel_util_dialog_message_padding">25dp</dimen>
     <!-- 对话框的内容大小 -->
     <dimen name="confirm_cancel_util_dialog_message_text_size">16sp</dimen>
     <!-- 对话框的按钮大小 -->
-    <dimen name="confirm_cancel_util_dialog_btn_text_size">18sp</dimen>
+    <dimen name="confirm_cancel_util_dialog_btn_text_size">16sp</dimen>
 
 </resources>

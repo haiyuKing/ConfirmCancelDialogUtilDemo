@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 							public void setDialog(TextView title, TextView message, Button leftBtn, Button rightBtn) {
 								title.setText("提示");
 								message.setText("请检查用户名");
-								message.setGravity(Gravity.CENTER);
 								leftBtn.setText("确定");
 								rightBtn.setVisibility(View.GONE);
 							}
@@ -72,19 +71,19 @@ public class MainActivity extends AppCompatActivity {
 							public void setDialog(TextView title, TextView message, Button leftBtn, Button rightBtn) {
 								title.setText("保存到");
 								message.setText("您可以'立即发送'给收件人，也可以保存到'草稿箱'");
-								leftBtn.setText("立即发送");
-								rightBtn.setText("草稿箱");
+								leftBtn.setText("草稿箱");
+								rightBtn.setText("立即发送");
 							}
 						});
 				dialog.setDialogClickListener(new ConfirmCancelUtilDialog.DialogClickListener() {
 					@Override
 					public void leftClickListener() {
-						Toast.makeText(MainActivity.this, "立即发送", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "草稿箱", Toast.LENGTH_SHORT).show();
 					}
 
 					@Override
 					public void rightClickListener() {
-						Toast.makeText(MainActivity.this, "草稿箱", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "立即发送", Toast.LENGTH_SHORT).show();
 					}
 				});
 				dialog.show(getSupportFragmentManager(), "confirmCancelDialog");
@@ -101,19 +100,19 @@ public class MainActivity extends AppCompatActivity {
 								title.setVisibility(View.GONE);
 								message.setText("发现新版本，是否升级？");
 								message.setGravity(Gravity.CENTER);
-								leftBtn.setText("确定");
-								rightBtn.setText("取消");
+								leftBtn.setText("取消");
+								rightBtn.setText("确定");
 							}
 						});
 				dialog.setDialogClickListener(new ConfirmCancelUtilDialog.DialogClickListener() {
 					@Override
 					public void leftClickListener() {
-						Toast.makeText(MainActivity.this, "确定", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "取消", Toast.LENGTH_SHORT).show();
 					}
 
 					@Override
 					public void rightClickListener() {
-						Toast.makeText(MainActivity.this, "取消", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, "确定", Toast.LENGTH_SHORT).show();
 					}
 				});
 				dialog.show(getSupportFragmentManager(), "confirmCancelDialog");
